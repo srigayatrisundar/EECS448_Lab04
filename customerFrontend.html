@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Shopping Frontend</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <form id="shopForm" method="post" action="customerBackend.php">
+      <div><br>
+        Username: <input type="text" name="username" id="username" value="username@something.com"><br><br>
+        Password: <input type="text" name="password" id="password" value="password">
+        <br>
+      </div>
+      <div>
+        Bangles<br>
+        Price: $10<br>
+        Quantity: <input type="text" name="bangles" id="bangles" value="0"><br><br>
+        Rings<br>
+        Price: $30<br>
+        Quantity: <input type="text" name="rings" id="rings" value="0"><br><br>
+        Anklets<br>
+        Price: $50<br>
+        Quantity: <input type="text" name="anklets" id="anklets" value="0"><br><br>
+      </div>
+      <div>
+        Shipping<br>
+        <input type="radio" name="shipping" value="1" checked>Free 7 day<br>
+        <input type="radio" name="shipping" value="2">$50.00 over night<br>
+        <input type="radio" name="shipping" value="3">$5.00 three day<br>
+      </div>
+
+        <input type="button" onclick="check()" value="Submit">
+        <input type="button" onclick="reset()" value="Reset">
+    </form>
+
+    <script src="formChecker.js"></script>
+  </body>
+</html>
